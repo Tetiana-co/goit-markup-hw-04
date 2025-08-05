@@ -48,7 +48,6 @@ a {
 .header-nav {
   display: flex;
   align-items: center;
-  gap: 76px;
 }
 
 .logo {
@@ -133,6 +132,18 @@ a {
   background-color: #2e2f42;
   padding: 188px 0;
   text-align: center;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url("../images/people-office.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  max-width: 1440px;
+  margin: 0 auto;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  border: 1px solid #000;
 }
 
 .hero-button {
@@ -235,10 +246,12 @@ a {
 
 /* Team Section */
 .page-team {
+  border-radius: 0 0 4px 4px;
+  padding: 0px 0px 32px 0px;
   background-color: #f4f4fd;
-  padding-top: 120px;
-  padding-bottom: 120px;
   text-align: center;
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 
 .team_title {
@@ -298,15 +311,17 @@ a {
 .page-portfolio {
   padding-top: 120px;
   padding-bottom: 120px;
-  background-color: #f4f4fd;
 }
 
 .portfolio_item {
   width: calc((100% - 48px) / 3);
-  border: 1px solid #e7e9fc;
   background-color: #fff;
 }
 
+.portfolio_item.marketing {
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+}
 .section_title {
   font-size: 36px;
   line-height: 1.11;
